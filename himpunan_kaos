@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{ //variable
+  int ukuran_kaos;
+  //program
+  cout<<"Menentukan ukuran kaos"<<endl;
+  cout<<"masukan ukuran kaos:"<<endl;
+  cin>>ukuran_kaos;
+
+  if(ukuran_kaos<37){
+    cout<<"ukuran tidak ada"<<endl;
+  }
+  else if(ukuran_kaos>=37,ukuran_kaos<38){
+    cout<<"ukuran kaos S"<<endl;
+  }
+  else if(ukuran_kaos>=39,ukuran_kaos<40){
+    cout<<"ukuran kaos L"<<endl;
+  }
+  else if(ukuran_kaos>=40,ukuran_kaos<41){
+    cout<<"ukuran kaos M"<<endl;
+  }
+  else if(ukuran_kaos>=41,ukuran_kaos<45){
+    cout<<"ukuran kaos XL"<<endl;
+  }
+  else if(ukuran_kaos>45){
+    cout<<"ukuran tidak ada"<<endl;
+  }
+  return 0;
+}
+
+
+
