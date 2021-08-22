@@ -1,0 +1,57 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int pilihan;
+float r,l_ling,p,l,l_persegi,a,t,l_segitiga;
+const float Pi = 3.14;
+
+    cout<<"[======================]"<<endl;
+    cout<<"[        MENU          ]"<<endl;
+    cout<<"[                      ]"<<endl;
+    cout<<"[1.LUAS SEGITIGA       ]"<<endl;
+    cout<<"[2.LUAS PERSEGI PANJANG]"<<endl;
+    cout<<"[3.LUAS LINGKARAN      ]"<<endl;
+    cout<<"[                      ]"<<endl;
+    cout<<"[======================]"<<endl;
+    cout<<"masukan pilihan[1/3]:";
+    cin>>pilihan;
+    switch(pilihan){
+
+case 1:
+    cout<<"LUAS SEGITIGA"<<endl<<endl;
+    cout<<"MASUKAN ALAS:";
+    cin>>a;
+    cout<<"MASUKAN TINGGI:";
+    cin>>t;
+    l_segitiga = a*t/2;
+    cout<<endl<<"LUAS SEGITIGA = "<<l_segitiga;
+    break;
+
+case 2:
+    cout<<"LUAS PERSEGI PANJANG:"<<endl<<endl;
+    cout<<"MASUKAN PANJANG:"<<endl<<endl;
+    cin>>p;
+    cout<<"MASUKAN LEBAR"<<endl<<endl;
+    cin>>l;
+    if(p < 0 && l < 0){
+        cout<<"ERROR"<<endl;
+    }else (p > 0 && l > 0);{
+        l_persegi = p*l;
+    cout<<endl<<"LUAS PERSEGI PANJANG = "<<l_persegi;
+    break;
+    }
+
+case 3:
+    cout<<"LUAS LINGKARAN:"<<endl<<endl;
+    cout<<"MASUKAN JARI-JARI:"<<endl<<endl;
+    cin>>r;
+    if(r < 0){
+        cout<<"ERROR"<<endl;
+    }else (r > 0);{
+        l_ling = Pi*r*r;
+    cout<<endl<<"LUAS LINGKARAN = "<<l_ling;
+    break;
+    }
+    }
+}
