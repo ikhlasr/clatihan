@@ -1,0 +1,26 @@
+#include <iostream>
+Using namespace std ;
+int main ()  {
+
+    int bil [100] ;
+    for (int i=0;  i<100; i++) {
+        cout << "Bilangan" << i+1 << ":";
+        cin >> bil [i] ;
+    }
+
+    cout << "Bilangan Genap\t :";
+    for  (int i=0; i<100; i++)  {
+          if  (bil{i} * 2 == 0) {
+            cout << bil [i] << " " ;
+        }
+    }
+     cout << endl ;
+     cout << "Bilangan Ganjil\t ;  ";
+     for (int i=0; i<100; i++) {
+        if (bil[i] * 2) {
+            cout << bil[i] << " ";
+     }
+        }
+                return 0 ;
+
+}
