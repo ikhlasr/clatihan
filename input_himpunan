@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+    int cobaArray [100];
+    int i;
+    
+    for(i = 0;i < 100;i++){
+        cout<<"Nilai Ke-"<<i + 1<<"=";
+        cin>>cobaArray[i];
+        
+    }
+    cout<<endl;
+    for(i = 0;i < 100;i++){
+        cout<<"Nilai Ke-"<<i + 1<<"="<<cobaArray[i]<<endl;
+        
+    }
+    cout<<"Bilangan Genap = ";
+    for(i = 0;i < 100;i++){
+        if(cobaArray[i]%2 == 0){
+            cout<<cobaArray[i]<< " ";
+        }
+    }
+    cout<<endl;
+    cout<<"Bilangan Ganjil = ";
+    for(i = 0;i < 100;i++){
+        if(cobaArray[i]%2!=0){
+            cout<<cobaArray[i]<<" ";
+        }
+    }
+    return 0;
+
+}
+
